@@ -67,3 +67,19 @@ footer.page-footer {
 .shadow{
   text-shadow: 1px 1px #000;
 }
+
+.btn-large{
+    color: #fff;
+    background-color: #254e58;
+}
+
+.btn-large:hover{
+    color: #fff;
+    background-color: #112d32; 
+} 
+
+.page-footer{
+    color: #fff;
+    background-color: #112d32;
+}
+
