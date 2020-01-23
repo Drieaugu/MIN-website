@@ -96,7 +96,8 @@
                         <div class="card-content black-text ">
                             <span class="card-title">Waar?</span>
                             <p>We bevinden ons in de St. Apollonialaan 198 in Mol achter het buurtrestaurant
-                                “Apollon”. <a href="https://goo.gl/maps/XuPYXgbK23tc82oDA">Naar Google Maps</a>.</p>
+                                “Apollon”.</p>
+                            <div id="map"></div>
                         </div>
                     </div>
                 </div>
@@ -119,21 +120,23 @@
                         </li>
                         <li>
                             <h6>
-                                Maatschappelijke zetel:
+                              Maatschappelijke zetel:
                             </h6>
                             <div>
-                                Bresserdijk 4 - 2400 Mol
+                              Bresserdijk 4<br>
+                              2400 Mol
                             </div>
-
-                        </li>
-                        <li>
+              
+                          </li>
+                          <li>
                             <h6>
-                                Voedselbediening - Noodhulp op zaterdag:
+                              Voedselbediening - Noodhulp op zaterdag:
                             </h6>
                             <div>
-                                St Apollonialaan 198 - 2400 Mol
+                              St Apollonialaan 198<br>
+                              2400 Mol
                             </div>
-                        </li>
+                          </li>
                         <li>
                             <h6>
                                 Giften/sponsoring:
@@ -202,6 +205,29 @@
         $(document).ready(function () {
             $('.sidenav').side
         });
+    </script>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var MIN = {
+                lat: 51.190314,
+                lng: 5.103783
+            };
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {
+                    zoom: 4,
+                    center: MIN
+                });
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({
+                position: MIN,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsTk74Q5w6lH_viI7nIFIQcAF1ESlYEaw&callback=initMap">
     </script>
 </body>
 
