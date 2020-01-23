@@ -5,6 +5,16 @@
 en die bovenop materialize komen */
 
 body {
-    background-color: #eee;
+    background-color: #F6F6F6;
     color: darkblue;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul{
+    margin-left: 90px;
+    
+  }
+
+nav{
+    background-color: #20368F;
 }
