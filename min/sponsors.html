@@ -30,17 +30,18 @@
                 </ul>
             </div>
         </nav>
-    </header>
 
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="op.html">Op=Op</a></li>
-        <li><a href="activiteiten.html">Activiteiten</a></li>
-        <li class="active"><a href="sponsors.html">Sponsors</a></li>
-        <li><a href="doneren.html">Doneren</a></li>
-        <li><a href="partners.html">Partners</a></li>
-        <li><a href="historiek.html">Historiek</a></li>
-    </ul>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="op.html">Op=Op</a></li>
+            <li><a href="activiteiten.html">Activiteiten</a></li>
+            <li class="active"><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="doneren.html">Doneren</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="historiek.html">Historiek</a></li>
+        </ul>
+    </header>
     <main>
         <h1>MIN</h1>
     </main>
@@ -135,6 +136,13 @@
     </footer>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        var elem = document.querySelector('.sidenav');
+        var instance = new M.Sidenav(elem);
+        $(document).ready(function () {
+            $('.sidenav').side
+        });
+    </script>
 </body>
 
 </html>
