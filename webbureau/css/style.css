@@ -63,3 +63,7 @@ footer.page-footer {
 .icon-block img{
   border-radius: 50%;
 }
+
+.shadow{
+  text-shadow: 1px 1px #000;
+}
