@@ -10,11 +10,34 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-nav ul{
-    margin-left: 90px;
-    
-  }
-
 nav{
     background-color: #20368F;
+    color: #EBEBEB;
+}
+
+nav li:hover, nav li:hover a{
+    background-color: #EBEBEB;
+    color: #20368F;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+.page-footer{
+      background-color: #20368F;
+  }
+
+.footer-copyright{
+    background-color: rgba(0, 10, 71, 0.4) !important;
+}
+
+.material-icons{
+    font-size: 16px;
 }
