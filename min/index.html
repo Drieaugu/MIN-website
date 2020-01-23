@@ -43,7 +43,33 @@
     </ul>
   </header>
   <main>
-    <h1>MIN</h1>
+        <div class="container">
+        <h1>Home</h1>
+        <div class="row">
+            <div class="col l8 s12">
+                <div class="col s12">
+                    <h2>Wie zijn wij?</h2>
+                    <p>Actie mensen in nood is een organisatie die mensen in armoede nabij is. We proberen mee te zoeken naar oplossingen of verwijzen naar de instanties die verder kunnen helpen. Wij zijn actief in de regio Mol, Balen, Dressel en Retie.</p>
+                    <p>We zetten ons belangeloos in voor mensen die het moeilijk hebben, door naar hen te luisteren, begrip te tonen, directe noden te lenigen en vervolgens met hen mee op pad te gaan, zoekend naar een oplossing voor hun problemen.</p>        
+                </div>
+                <div class="col s12">
+                    <h2>Ons team</h2>
+                    <div class="col xl6 l12">
+                        <p>Op de dag van vandaag zijn wij een groep van <span class="vet">50 gedreven vrijwilligers</span> die Actie voert voor <span class="vet">M</span>ensen <span class="vet">I</span>n <span class="vet">N</span>ood, ongeacht welk hun geloof, kleur, of politieke overtuiging is. Wij zijn solidair met mensen die het moeten stellen met een leefloon, budgetbeheer of die gebukt gaan onder collectieve schuldbemiddeling. Ook voor mensen die uitgeprocedeerd zijn en geen enkele vorm van inkomen meer hebben trachten we er te zijn en mee op pad te gaan om oplossingen te zoeken. </p>
+                    </div>
+                    <div class="col xl6 l12">
+                        <img class="border col s12" src="afbeeldingen/GroepsfotoMIN.jpg" alt="Groepsfoto van de werknemers">     
+                    </div>
+                </div>
+                <div class="col s12">
+                    <h2>Hoe werken we?</h2>
+                    <p><span class="vet">Actie MIN</span> is best te vergelijken met de spoeddienst in het ziekenhuis. De mensen die totaal verdwaald zijn in de mallemolen van het leven en zich even niet alleen meer kunnen redden, zijn bij ons welkom voor hulp. Na de eerste zorgen gaan we samen met hen bekijken wat de volgende stappen kunnen zijn naar het herstel van hun situatie. Dan verwijzen we naar  andere organisaties zoals het OCMW, CAW of JAC of zoeken naar andere mogelijkheden om uit het dal te geraken.</p>
+                </div>
+            </div>
+            <!--Facebookfeed op pagina-->
+            <div class="fb-page col l4 s12" data-href="https://www.facebook.com/hetgoudenhart.vzw/" data-tabs="timeline" data-width="300" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+        </div>
+    </div>
   </main>
   <footer class="page-footer">
     <div class="container">
@@ -143,6 +169,42 @@
       $('.sidenav').side
     });
   </script>
+      <!--JavaScript voor Facebookfeed-->
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v3.2';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.slider').slider();
+        });
+
+    </script>
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-79892035-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 </body>
 
 </html>
