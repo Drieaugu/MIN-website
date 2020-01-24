@@ -13,11 +13,13 @@
     <link type="text/css" rel="stylesheet" href="css/min.css" media="screen" />
     <link rel="shortcut icon" type="image/x-icon" href="./afbeeldingen/favicon.ico">
 </head>
+
 <body>
     <header>
         <nav>
             <div class="nav-wrapper">
-                <a href="./index.html" class="brand-logo"><img src="./afbeeldingen/LogoActieMIN.png" alt="Logo Actie MIN" width="100px" height="60px"></a>
+                <a href="./index.html" class="brand-logo"><img src="./afbeeldingen/LogoActieMIN.png"
+                        alt="Logo Actie MIN" width="100px" height="60px"></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="index.html">Home</a></li>
@@ -42,7 +44,43 @@
         </ul>
     </header>
     <main>
-        <h1>Doneren</h1>
+        <div class="container">
+            <h1>Doneren</h1>
+            <h2>Voedsel doneren</h2>
+            <p>Wilt u voedsel zoals, fruit, groenten, zuivel en andere nog houdbare artikelen schenken aan Actie MIN?
+                Neemt gerust contact op via mail: <a
+                    href="mailto:actiemenseninnood@gmail.com">actiemenseninnood@gmail.com</a> of telefonisch via: <a
+                    href="tel:0473241361">0473 24 13 61</a>.</p>
+            <h2>Voedselbox</h2>
+            <div class="row">
+            	<div class="col m6 s12">
+            	    <p>In Carrefour market, Statiestraat 53A in Mol vind je onze ‘Voedselbox’ waarin je altijd droge voeding mag
+            	        droppen.</p>
+                </div>
+                <div class="col m6 s12">
+                    <img class="responsive-img" src="./afbeeldingen/voedselbox.jpg" width="250px" alt="Voedselbox Alma">
+                </div>
+            </div>
+            <div id="map"></div>
+            <h2>Sponsoring</h2>
+            <h3>Trooper</h3>
+            <div class="row">
+                <div class="col m6 s12">
+                    <p>Koop je vaak online, dan kan je via <a href="https://trooper.be/actiemin">Trooper.be</a> ook onze vereniging ondersteunen. Je zoekt onze vereniging op en je kan shoppen. Wij ontvangen een klein percentage. </p>
+                </div>
+                <div class="col m6 s12">
+                    <img src="./afbeeldingen/trooper.png" alt="Logo Trooper" class="responsive-img">
+                </div>
+            </div>
+            <h3>De Warmste Week</h3>
+            <div class="row">
+                <div class="col m6 s12">
+                    <p>Wij zijn lid van de Warmste Week en voor het tweede jaar op rij waren er verschillende acties die ons extra centjes in het laatje brachten.</p>
+                </div>
+                <div class="col m6 s12">
+                    <img src="./afbeeldingen/dww.png" alt="Logo De Warmste Week" class="responsive-img">
+                </div>
+            </div>
     </main>
     <footer class="page-footer">
         <div class="container">
@@ -58,23 +96,23 @@
                         </li>
                         <li>
                             <h6>
-                              Maatschappelijke zetel:
+                                Maatschappelijke zetel:
                             </h6>
                             <div>
-                              Bresserdijk 4<br>
-                              2400 Mol
+                                Bresserdijk 4<br>
+                                2400 Mol
                             </div>
-              
-                          </li>
-                          <li>
+
+                        </li>
+                        <li>
                             <h6>
-                              Voedselbediening - Noodhulp op zaterdag:
+                                Voedselbediening - Noodhulp op zaterdag:
                             </h6>
                             <div>
-                              St Apollonialaan 198<br>
-                              2400 Mol
+                                St Apollonialaan 198<br>
+                                2400 Mol
                             </div>
-                          </li>
+                        </li>
                         <li>
                             <h6>
                                 Giften/sponsoring:
@@ -143,6 +181,30 @@
         $(document).ready(function () {
             $('.sidenav').side
         });
+    </script>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Alma
+            var Alma = {
+                lat: 51.189788, 
+                lng: 5.117621
+            };
+            // The map, centered at Alma
+            var map = new google.maps.Map(
+                document.getElementById('map'), {
+                    zoom: 15,
+                    center: Alma
+                });
+            // The marker, positioned at Alma
+            var marker = new google.maps.Marker({
+                position: Alma,
+                map: map
+            });
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsTk74Q5w6lH_viI7nIFIQcAF1ESlYEaw&callback=initMap">
     </script>
 </body>
 
