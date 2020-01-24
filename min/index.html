@@ -43,6 +43,29 @@
   </header>
   <main>
         <div class="container">
+          <div class="carousel carousel-slider center">
+            <div class="carousel-fixed-item center middle-indicator">
+             <div class="left">
+              <a href="Previo" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons left  middle-indicator-text">chevron_left</i></a>
+             </div>
+
+             <div class="right">
+             <a href="Siguiente" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons right middle-indicator-text">chevron_right</i></a>
+             </div>
+            </div>
+            <div class="carousel-item" href="#one!">
+              <h2>First Panel</h2>
+              <p><img src="./afbeeldingen/carousel_slider/carousel_img1.jpg" alt="Brooddag"></p>
+            </div>
+            <div class="carousel-item" href="#two!">
+              <h2>Second Panel</h2>
+              <p><img src="./afbeeldingen/carousel_slider/carousel_img2.jpg" alt="Voedselbedeling">l</p>
+            </div>
+            <div class="carousel-item" href="#three!">
+              <h2>Third Panel</h2>
+              <p><img src="./afbeeldingen/carousel_slider/carousel_img3.jpg" alt="Voedingsmiddelen"></p>
+            </div>
+          </div>
         <h1>Home</h1>
         <div class="row">
             <div class="col l8 s12">
@@ -210,7 +233,29 @@
 
         ga('create', 'UA-79892035-1', 'auto');
         ga('send', 'pageview');
+    </script>
+    <!--jQuery carousel slider-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel.carousel-slider').carousel({
+              fullWidth: true,
+              indicators: false
+           });
 
+           $('.moveNextCarousel').click(function(e){
+              e.preventDefault();
+              e.stopPropagation();
+              $('.carousel').carousel('next');
+           });
+
+           $('.movePrevCarousel').click(function(e){
+              e.preventDefault();
+              e.stopPropagation();
+              $('.carousel').carousel('prev');
+           });
+        });
     </script>
 </body>
 
