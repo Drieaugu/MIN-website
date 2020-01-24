@@ -177,5 +177,6 @@ a.middle-indicator-text {
 }
 
 #imgfransvandeursen {
-    padding-top: 10px;
+    border-radius: 4%;
+    border: 2px solid black;
 }
