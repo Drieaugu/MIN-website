@@ -113,6 +113,7 @@ h2 {
     font-weight: bold;
 }
 
-.ppaddingbot{
+.pnormal{
+    font-weight: normal !important;
     padding-bottom: 10px;
 }
