@@ -52,8 +52,17 @@ main {
     padding: 0px !important;
 }
 
+.logo{
+    height: 250px;
+    position: relative;
+}
+
 .vet {
     font-weight: bold;
+}
+
+.tussenHoofding{
+    font-size: 20px
 }
 
 h1,
@@ -74,3 +83,24 @@ h2 {
     height: 400px;  /* The height is 400 pixels */
     width: 100%;  /* The width is the width of the web page */
    }
+
+#sponsers{
+    text-align: center;
+}
+
+#sponsers div img{
+    max-width: 90%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#test{
+    margin: auto;
+}
