@@ -54,6 +54,7 @@ main {
 
 .logo{
     height: 250px;
+    width: 100%;
     position: relative;
 }
 
