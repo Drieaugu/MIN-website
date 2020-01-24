@@ -112,3 +112,12 @@ h2 {
 #pwaar{
     padding-bottom: 15px;
 }
+
+.libold{
+    font-weight: bold;
+}
+
+.pnormal{
+    font-weight: normal !important;
+    padding-bottom: 10px;
+}
