@@ -13,32 +13,34 @@
   <link type="text/css" rel="stylesheet" href="css/min.css" media="screen" />
   <link rel="shortcut icon" type="image/x-icon" href="./afbeeldingen/favicon.ico">
 </head>
+
 <body>
   <header>
     <nav>
       <div class="nav-wrapper">
-        <a href="./index.html" class="brand-logo"><img src="./afbeeldingen/LogoActieMIN.png" alt="Logo Actie MIN" width="100px" height="60px"></a>
+        <a href="./index.html" class="brand-logo"><img src="./afbeeldingen/LogoActieMIN.png" alt="Logo Actie MIN"
+            width="100px" height="60px"></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="op.html">Op=Op</a></li>
-          <li><a href="activiteiten.html">Activiteiten</a></li>
-          <li><a href="sponsors.html">Sponsors</a></li>
-          <li><a href="doneren.html">Doneren</a></li>
-          <li><a href="partners.html">Partners</a></li>
-          <li><a href="historiek.html">Historiek</a></li>
+          <li class="nav-active"><a href="index.html"><i class="large material-icons left">home</i>Home</a></li>
+          <li><a href="op.html"><i class="material-icons left">local_grocery_store</i>Winkeltje</a></li>
+          <li><a href="activiteiten.html"><i class="material-icons left">local_activity</i>Activiteiten</a></li>  
+          <li><a href="sponsors.html"><i class="material-icons left">thumb_up</i>Sponsors</a></li>
+          <li><a href="doneren.html"><i class="material-icons left">favorite</i>Doneren</a></li>
+          <li><a href="partners.html"><i class="material-icons left">accessibility</i>Partners</a></li>
+          <li><a href="historiek.html"><i class="material-icons left">history</i>Historiek</a></li>
         </ul>
       </div>
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-      <li class="active"><a href="index.html"><i class="material-icons">home</i>Home</a></li>
-      <li><a href="op.html">Op=Op</a></li>
-      <li><a href="activiteiten.html">Activiteiten</a></li>
-      <li><a href="sponsors.html">Sponsors</a></li>
-      <li><a href="doneren.html">Doneren</a></li>
-      <li><a href="partners.html">Partners</a></li>
-      <li><a href="historiek.html">Historiek</a></li>
+      <li class="nav-active"><a href="index.html"><i class="material-icons">home</i>Home</a></li>
+      <li><a href="op.html"><i class="material-icons left">local_grocery_store</i>Winkeltje</a></li>
+      <li><a href="activiteiten.html"><i class="material-icons left">local_activity</i>Activiteiten</a></li>  
+      <li><a href="sponsors.html"><i class="material-icons left">thumb_up</i>Sponsors</a></li>
+      <li><a href="doneren.html"><i class="material-icons left">favorite</i>Doneren</a></li>
+      <li><a href="partners.html"><i class="material-icons left">accessibility</i>Partners</a></li>
+      <li><a href="historiek.html"><i class="material-icons left">history</i>Historiek</a></li>
     </ul>
   </header>
   <main>
@@ -93,10 +95,25 @@
                     <p><span class="vet">Actie MIN</span> is best te vergelijken met de spoeddienst in het ziekenhuis. De mensen die totaal verdwaald zijn in de mallemolen van het leven en zich even niet alleen meer kunnen redden, zijn bij ons welkom voor hulp. Na de eerste zorgen gaan we samen met hen bekijken wat de volgende stappen kunnen zijn naar het herstel van hun situatie. Dan verwijzen we naar  andere organisaties zoals het OCMW, CAW of JAC of zoeken naar andere mogelijkheden om uit het dal te geraken.</p>
                 </div>
             </div>
-            <!--Facebookfeed op pagina-->
-            <div class="fb-page col l4 s12" data-href="https://www.facebook.com/hetgoudenhart.vzw/" data-tabs="timeline" data-width="300" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+            <div class="col xl6 l12">
+              <img class="border col s12" src="afbeeldingen/GroepsfotoMIN1.jpg" alt="Groepsfoto van de werknemers">
+            </div>
+          </div>
+          <div class="col s12">
+            <h2>Hoe werken we?</h2>
+            <p><span class="vet">Actie MIN</span> is best te vergelijken met de spoeddienst in het ziekenhuis. De mensen
+              die totaal verdwaald zijn in de mallemolen van het leven en zich even niet alleen meer kunnen redden, zijn
+              bij ons welkom voor hulp. Na de eerste zorgen gaan we samen met hen bekijken wat de volgende stappen
+              kunnen zijn naar het herstel van hun situatie. Dan verwijzen we naar andere organisaties zoals het OCMW,
+              CAW of JAC of zoeken naar andere mogelijkheden om uit het dal te geraken.</p>
+          </div>
         </div>
-    </div>
+        <!--Facebookfeed op pagina-->
+        <iframe
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FActie-MIN-158650077586415%2F&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+          width="300" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+          allowTransparency="true" allow="encrypted-media"></iframe>
+      </div>
   </main>
   <footer class="page-footer">
     <div class="container">
@@ -198,42 +215,11 @@
       $('.sidenav').side
     });
   </script>
-    <!--JavaScript voor Facebookfeed-->
-     <div id="fb-root"></div>
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = 'https://connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v3.2';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-
-    </script>
-    <script>
-        $(document).ready(function() {
-            $('.slider').slider();
-        });
-
-    </script>
-
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-79892035-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+  <script>
+    $(document).ready(function () {
+      $('.slider').slider();
+    });
+  </script>
     <!--jQuery carousel slider-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

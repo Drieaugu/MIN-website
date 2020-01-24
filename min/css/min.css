@@ -4,6 +4,7 @@
 /* Schrijf hier je aanpassingen die specifiek voor MIN zijn
 en die bovenop materialize komen */
 
+/*Styling of plain HTML elements*/
 body {
     background-color: #F6F6F6;
     color: black;
@@ -26,7 +27,32 @@ nav li:hover a {
     color: black;
 }
 
-.active {
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/*Classes*/
+.nav-active {
     background-color: #0c1539 !important;
 }
 
@@ -34,16 +60,12 @@ nav li:hover a {
     background-color: #EBEBEB !important;
 }
 
-main {
-    flex: 1 0 auto;
-}
-
 .page-footer {
-    background: rgb(32,54,143);
-    background: linear-gradient(180deg, rgba(32,54,143,1) 0%, rgba(49,24,111,1) 100%) !important;
+    background: rgb(32, 54, 143);
+    background: linear-gradient(180deg, rgba(32, 54, 143, 1) 0%, rgba(49, 24, 111, 1) 100%) !important;
 }
 
-.page-footer li a{
+.page-footer li a {
     text-decoration: underline !important;
 }
 
@@ -52,7 +74,7 @@ main {
     padding: 0px !important;
 }
 
-.logo{
+.logo {
     height: 250px;
     width: 100%;
     position: relative;
@@ -62,30 +84,7 @@ main {
     font-weight: bold;
 }
 
-.tussenHoofding{
-    font-size: 20px
-}
-
-h1,
-h2 {
-    text-align: center;
-}
-
-h1 {
-    margin-bottom: 5px;
-}
-
-h2 {
-    padding-bottom: 10px;
-    margin-top: 0px;
-}
-
-#map {
-    height: 400px; 
-    width: 100%;  
-}
-
-.center-in-div{
+.center-in-div {
     max-width: 90%;
     max-height: 90%;
     width: auto;
@@ -98,62 +97,46 @@ h2 {
     margin: auto;
 }
 
-#test{
-    margin: auto;
-}
-
-#pwaar{
-    padding-bottom: 15px;
-}
-
-.libold{
-    font-weight: bold;
-}
-
-.pnormal{
+.pnormal {
     font-weight: normal !important;
     padding-bottom: 10px;
 }
 
-h1{
+.display-1 {
     font-size: 2.5rem;
 }
 
-h2{
+.display-2 {
     font-size: 2rem;
 }
 
-h3{
+.display-3 {
     font-size: 1.75rem;
 }
 
-h4{
+.display-4 {
     font-size: 1.5rem;
 }
 
-h5{
+.display-5 {
     font-size: 1.25rem;
 }
 
-.display-1{
-    font-size: 2.5rem;
+.center-align {
+    text-align: center;
 }
 
-.display-2{
-    font-size: 2rem;
+.justify-text {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
-.display-3{
-    font-size: 1.75rem; 
+/*ID's*/
+#map {
+    height: 400px;
+    width: 100%;
 }
 
-.display-4{
-    font-size: 1.5rem;
-}
-
-.display-5{
-    font-size: 1.25rem;
-}
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -188,4 +171,7 @@ a.middle-indicator-text{
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px; 
+
+#imgfransvandeursen{
+    padding-top: 10px;
 }
