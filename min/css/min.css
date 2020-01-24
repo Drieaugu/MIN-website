@@ -65,6 +65,10 @@ main {
     font-size: 20px
 }
 
+.brand-logo{
+    margin: 0px;
+}
+
 h1,
 h2 {
     text-align: center;
