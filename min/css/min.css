@@ -102,6 +102,16 @@ main {
     padding-bottom: 10px;
 }
 
+.btn-nav-kleur {
+    background-color: #20368f;
+    color: #EBEBEB;
+}
+
+.btn-nav-kleur:hover {
+    background-color: #EBEBEB;
+    color: black;
+}
+
 .display-1 {
     font-size: 2.5rem;
 }
@@ -131,6 +141,10 @@ main {
     text-justify: inter-word;
 }
 
+.filter-brightness{
+    filter: brightness(75%);
+}
+
 /*ID's*/
 #map {
     height: 400px;
@@ -151,29 +165,6 @@ main {
     direction: ltr;
     -moz-font-feature-settings: 'liga';
     -moz-osx-font-smoothing: grayscale;
-}
-
-/*Opmaak pijlen slideshow*/
-.middle-indicator {
-    position: absolute;
-    top: 50%;
-}
-
-.middle-indicator-text {
-    font-size: 4.2rem;
-}
-
-a.middle-indicator-text {
-    color: white !important;
-}
-
-.content-indicator {
-    width: 64px;
-    height: 64px;
-    background: none;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
 }
 
 #imgfransvandeursen {
