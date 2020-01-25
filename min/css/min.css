@@ -197,3 +197,7 @@ main {
     border-radius: 4%;
     border: 2px solid black;
 }
+
+.btn-in-text{
+    margin-bottom: 30px;
+}
