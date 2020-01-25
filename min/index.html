@@ -46,26 +46,31 @@
         <div class="slider">
             <ul class="slides">
                 <li>
-                    <img src="./afbeeldingen/carousel_slider/carousel_img1.jpg">
-                    <div class="caption center-align display-bottom">
-                        <h3 class="shadow display-1">MIN helpt!</h3>
+                    <img src="./afbeeldingen/carousel_slider/carousel_img1.jpg" alt="Brood">
+                    <div class="caption right-align">
+                        <h3 class="shadow display-1">MIN</h3>
+                        <h5 class="light grey-text text-lighten-3 shadow">Een organisatie die mensen in armoede nabij is.</h5>
                     </div>
                 </li>
                 <li>
-                    <img src="./afbeeldingen/carousel_slider/carousel_img2.jpg">
-                    <div class="caption right-align">
+                    <img src="./afbeeldingen/carousel_slider/carousel_img2.jpg" alt="Brood en tomaten in manden">
+                    <div class="caption left-align">
+                        <h3 class="shadow">Hulp nodig?</h3>
+                        <a href="./op.html" class="btn-large btn-nav-kleur">Ontdek het winkeltje</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./afbeeldingen/carousel_slider/carousel_img3.jpg" style="background-position: center 10%;" alt="Vrijwilligers">
+                    <div class="caption left-align">
                         <h3 class="shadow">Wordt vrijwilliger!</h3>
                         <a href="mailto:actiemenseninnood@gmail.com" class="btn-large btn-nav-kleur">Contacteer ons</a>
                     </div>
                 </li>
                 <li>
-                    <img src="./afbeeldingen/carousel_slider/carousel_img3.jpg">
-                </li>
-                <li>
-                    <img src="./afbeeldingen/carousel_slider/carousel_img4.jpg" class="filter-brightness">
+                    <img src="./afbeeldingen/carousel_slider/carousel_img4.jpg" class="filter-brightness" alt="Tomaten">
                     <div class="caption right-align">
-                        <h3>We helpen al mensen in nood sinds 1983</h3>
-                        <h5 class="light grey-text text-lighten-3">We helpen al mensen in nood sinds 1983</h5>
+                        <h3>Een helpende hand sinds 1983</h3>
+                        <a href="./historiek.html" class="btn-large btn-nav-kleur">Leer onze historiek</a>
                     </div>
                 </li>
             </ul>
@@ -212,14 +217,16 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('.slider').slider({
-                full_width: true
+                full_width: true,
+                height : 500,
             });
         });
     </script>
 
     <script type="text/javascript">
         $('.carousel.carousel-slider').carousel({
-            full_width: true
+            full_width: true,
+            height : 500
         });
     </script>
 </body></html>
