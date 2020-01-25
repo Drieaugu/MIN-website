@@ -84,6 +84,10 @@ main {
     font-weight: bold;
 }
 
+.onderlijn{
+    text-decoration: underline;
+}
+
 .center-in-div {
     max-width: 90%;
     max-height: 90%;
@@ -161,6 +165,10 @@ main {
 .display-bottom{
     transition-duration: 1s;
     transform: translateY(260px) !important;
+}
+
+.indicators{
+    padding-bottom: 5px;
 }
 
 /*ID's*/
