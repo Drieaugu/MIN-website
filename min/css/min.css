@@ -171,6 +171,10 @@ main {
     padding-bottom: 5px;
 }
 
+.witte-tekst{
+    color: #F6F6F6;
+}
+
 /*ID's*/
 #map {
     height: 400px;
