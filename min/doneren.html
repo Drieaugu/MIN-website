@@ -16,20 +16,37 @@
 
 <body>
     <header>
+        <!-- Dropdown Structure1 -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!" class="dropdown-item-nl">NL</a></li>
+            <li class="divider"></li>
+            <li><a href="#!" class="dropdown-item-fr">FR</a></li>
+            <li class="divider"></li>
+            <li><a href="#!" class="dropdown-item-en">EN</a></li>
+        </ul>
+        <!-- Dropdown Structure2 -->
+        <ul id="dropdown2" class="dropdown-content">
+            <li><a href="#!" class="dropdown-item-nl">NL</a></li>
+            <li class="divider"></li>
+            <li><a href="#!" class="dropdown-item-fr">FR</a></li>
+            <li class="divider"></li>
+            <li><a href="#!" class="dropdown-item-en">EN</a></li>
+        </ul>
         <div class="navbar-fixed">
             <nav>
                 <div class="nav-wrapper">
-                    <a href="./index.html" class="brand-logo"><img src="./afbeeldingen/LogoActieMIN.png"
-                            alt="Logo Actie MIN" width="100px" height="60px"></a>
+                    <a href="./index.html" class="brand-logo"><img src="./afbeeldingen/LogoActieMIN.png" alt="Logo Actie MIN" width="100px" height="60px"></a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="index.html"><i class="large material-icons left">home</i>Home</a></li>
                         <li><a href="op.html"><i class="material-icons left">local_grocery_store</i>Winkeltje</a></li>
-                        <li><a href="activiteiten.html"><i class="material-icons left">local_activity</i>Activiteiten</a></li>  
+                        <li><a href="activiteiten.html"><i class="material-icons left">local_activity</i>Activiteiten</a></li>
                         <li><a href="sponsors.html"><i class="material-icons left">thumb_up</i>Sponsors</a></li>
                         <li class="nav-active"><a href="doneren.html"><i class="material-icons left">favorite</i>Doneren</a></li>
                         <li><a href="partners.html"><i class="material-icons left">accessibility</i>Partners</a></li>
                         <li><a href="historiek.html"><i class="material-icons left">history</i>Historiek</a></li>
+                        <!-- Dropdown Trigger -->
+                        <li><a class="dropdown-trigger1" href="#!" data-target="dropdown1"><span class="dropdown-trigger1-text">NL</span><i class="material-icons right">arrow_drop_down</i></a></li>
                     </ul>
                 </div>
             </nav>
@@ -38,11 +55,13 @@
         <ul class="sidenav" id="mobile-demo">
             <li><a href="index.html"><i class="material-icons">home</i>Home</a></li>
             <li><a href="op.html"><i class="material-icons left">local_grocery_store</i>Winkeltje</a></li>
-            <li><a href="activiteiten.html"><i class="material-icons left">local_activity</i>Activiteiten</a></li>  
+            <li><a href="activiteiten.html"><i class="material-icons left">local_activity</i>Activiteiten</a></li>
             <li><a href="sponsors.html"><i class="material-icons left">thumb_up</i>Sponsors</a></li>
             <li class="nav-active"><a href="doneren.html"><i class="material-icons left">favorite</i>Doneren</a></li>
             <li><a href="partners.html"><i class="material-icons left">accessibility</i>Partners</a></li>
             <li><a href="historiek.html"><i class="material-icons left">history</i>Historiek</a></li>
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-trigger2" href="#!" data-target="dropdown2"><span class="dropdown-trigger2-text">NL</span><i class="material-icons right">arrow_drop_down</i></a></li>
         </ul>
     </header>
     <main>
@@ -50,9 +69,7 @@
             <h1>Doneren</h1>
             <h2>Voedsel doneren</h2>
             <p>Wilt u voedsel zoals, fruit, groenten, zuivel en andere nog houdbare artikelen schenken aan Actie MIN?
-                Neemt gerust contact op via mail: <a
-                    href="mailto:actiemenseninnood@gmail.com">actiemenseninnood@gmail.com</a> of telefonisch via: <a
-                    href="tel:0473241361">0473 24 13 61</a>.</p>
+                Neemt gerust contact op via mail: <a href="mailto:actiemenseninnood@gmail.com">actiemenseninnood@gmail.com</a> of telefonisch via: <a href="tel:0473241361">0473 24 13 61</a>.</p>
             <h2>Voedselbox</h2>
             <div class="row">
                 <div class="col m6 s12">
@@ -61,8 +78,7 @@
                         droppen.</p>
                 </div>
                 <div class="col m6 s12 logo">
-                    <img class="responsive-img center-in-div" src="./afbeeldingen/voedselbox.jpg" width="250px"
-                        alt="Voedselbox Alma">
+                    <img class="responsive-img center-in-div" src="./afbeeldingen/voedselbox.jpg" width="250px" alt="Voedselbox Alma">
                 </div>
             </div>
             <div id="map"></div>
@@ -88,6 +104,7 @@
                     <img src="./afbeeldingen/dww.png" alt="Logo De Warmste Week" class="responsive-img">
                 </div>
             </div>
+        </div>
     </main>
     <footer class="page-footer">
         <div class="container">
@@ -143,15 +160,13 @@
                             <h6>
                                 Ons emailadres:
                             </h6>
-                            <a class="grey-text text-lighten-3"
-                                href="mailto:actiemenseninnood@gmail.com">actiemenseninnood@gmail.com</a>
+                            <a class="grey-text text-lighten-3" href="mailto:actiemenseninnood@gmail.com">actiemenseninnood@gmail.com</a>
                         </li>
                         <li>
                             <h6>
                                 Onze Facebookpagina:
                             </h6>
-                            <a class="grey-text text-lighten-3"
-                                href="https://www.facebook.com/Actie-MIN-158650077586415/">MIN</a>
+                            <a class="grey-text text-lighten-3" href="https://www.facebook.com/Actie-MIN-158650077586415/">MIN</a>
                         </li>
                         <li>
                             <h6>
@@ -180,17 +195,18 @@
         </div>
         <div class="footer-copyright">
             <div class="container">
-                <p>Keuzeproject 1ITF @ <a href="https://www.thomasmore.be">Thomas More</a> door <a
-                        href="../webbureau/index.html">Upvision</a></p>
+                <p>Keuzeproject 1ITF @ <a href="https://www.thomasmore.be">Thomas More</a> door <a href="../webbureau/index.html">Upvision</a></p>
             </div>
         </div>
     </footer>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         var elem = document.querySelector('.sidenav');
         var instance = new M.Sidenav(elem);
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('.sidenav').side
         });
     </script>
@@ -215,9 +231,25 @@
             });
         }
     </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsTk74Q5w6lH_viI7nIFIQcAF1ESlYEaw&callback=initMap">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsTk74Q5w6lH_viI7nIFIQcAF1ESlYEaw&callback=initMap">
     </script>
-</body>
-
-</html>
+    <!--    Taal dropdown menu-->
+    <script>
+        $(document).ready(function() {
+            $(".dropdown-trigger1").dropdown();
+            $(".dropdown-trigger2").dropdown();
+            $(".dropdown-item-nl").click(function() {
+                $(".dropdown-trigger1-text").text("NL");
+                $(".dropdown-trigger2-text").text("NL");
+            });
+            $(".dropdown-item-fr").click(function() {
+                $(".dropdown-trigger1-text").text("FR");
+                $(".dropdown-trigger2-text").text("FR");
+            });
+            $(".dropdown-item-en").click(function() {
+                $(".dropdown-trigger1-text").text("EN");
+                $(".dropdown-trigger2-text").text("EN");
+            });
+        });
+    </script>
+</body></html>

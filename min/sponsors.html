@@ -16,20 +16,37 @@
 
 <body>
     <header>
+        <!-- Dropdown Structure1 -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!" class="dropdown-item-nl">NL</a></li>
+            <li class="divider"></li>
+            <li><a href="#!" class="dropdown-item-fr">FR</a></li>
+            <li class="divider"></li>
+            <li><a href="#!" class="dropdown-item-en">EN</a></li>
+        </ul>
+        <!-- Dropdown Structure2 -->
+        <ul id="dropdown2" class="dropdown-content">
+            <li><a href="#!" class="dropdown-item-nl">NL</a></li>
+            <li class="divider"></li>
+            <li><a href="#!" class="dropdown-item-fr">FR</a></li>
+            <li class="divider"></li>
+            <li><a href="#!" class="dropdown-item-en">EN</a></li>
+        </ul>
         <div class="navbar-fixed">
             <nav>
                 <div class="nav-wrapper">
-                    <a href="./index.html" class="brand-logo"><img src="./afbeeldingen/LogoActieMIN.png"
-                            alt="Logo Actie MIN" width="100px" height="60px"></a>
+                    <a href="./index.html" class="brand-logo"><img src="./afbeeldingen/LogoActieMIN.png" alt="Logo Actie MIN" width="100px" height="60px"></a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="index.html"><i class="large material-icons left">home</i>Home</a></li>
                         <li><a href="op.html"><i class="material-icons left">local_grocery_store</i>Winkeltje</a></li>
-                        <li><a href="activiteiten.html"><i class="material-icons left">local_activity</i>Activiteiten</a></li>  
+                        <li><a href="activiteiten.html"><i class="material-icons left">local_activity</i>Activiteiten</a></li>
                         <li class="nav-active"><a href="sponsors.html"><i class="material-icons left">thumb_up</i>Sponsors</a></li>
                         <li><a href="doneren.html"><i class="material-icons left">favorite</i>Doneren</a></li>
                         <li><a href="partners.html"><i class="material-icons left">accessibility</i>Partners</a></li>
                         <li><a href="historiek.html"><i class="material-icons left">history</i>Historiek</a></li>
+                        <!-- Dropdown Trigger -->
+                        <li><a class="dropdown-trigger1" href="#!" data-target="dropdown1"><span class="dropdown-trigger1-text">NL</span><i class="material-icons right">arrow_drop_down</i></a></li>
                     </ul>
                 </div>
             </nav>
@@ -39,11 +56,13 @@
         <ul class="sidenav" id="mobile-demo">
             <li><a href="index.html"><i class="material-icons">home</i>Home</a></li>
             <li><a href="op.html"><i class="material-icons left">local_grocery_store</i>Winkeltje</a></li>
-            <li><a href="activiteiten.html"><i class="material-icons left">local_activity</i>Activiteiten</a></li>  
+            <li><a href="activiteiten.html"><i class="material-icons left">local_activity</i>Activiteiten</a></li>
             <li class="nav-active"><a href="sponsors.html"><i class="material-icons left">thumb_up</i>Sponsors</a></li>
             <li><a href="doneren.html"><i class="material-icons left">favorite</i>Doneren</a></li>
             <li><a href="partners.html"><i class="material-icons left">accessibility</i>Partners</a></li>
             <li><a href="historiek.html"><i class="material-icons left">history</i>Historiek</a></li>
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-trigger2" href="#!" data-target="dropdown2"><span class="dropdown-trigger2-text">NL</span><i class="material-icons right">arrow_drop_down</i></a></li>
         </ul>
     </header>
     <main>
@@ -97,19 +116,16 @@
             <h2 class="display-3">De lokale sociale netwerken die ons financieel steunen</h2>
             <div class="row">
                 <div class="col l4 m6 s12 logo">
-                    <img class="center-in-div" src="./afbeeldingen/lions_international.png"
-                        alt="Logo Lions International">
+                    <img class="center-in-div" src="./afbeeldingen/lions_international.png" alt="Logo Lions International">
                 </div>
                 <div class="col l4 m6 s12 logo">
-                    <img class="center-in-div" src="./afbeeldingen/rotary_international.png"
-                        alt="Logo Rotary International">
+                    <img class="center-in-div" src="./afbeeldingen/rotary_international.png" alt="Logo Rotary International">
                 </div>
                 <div class="col l4 m6 s12 logo">
                     <img class="center-in-div" src="./afbeeldingen/ladies_circle.png" alt="Logo Ladies Circle">
                 </div>
                 <div class="col l4 m6 s12 logo">
-                    <img class="center-in-div" src="./afbeeldingen/fifty_one_international.png"
-                        alt="Logo Fifty-one Club Mol">
+                    <img class="center-in-div" src="./afbeeldingen/fifty_one_international.png" alt="Logo Fifty-one Club Mol">
                 </div>
                 <div class="col l4 m6 s12 logo">
                     <img class="center-in-div" src="./afbeeldingen/leo.png" alt="Logo Leo">
@@ -127,8 +143,7 @@
                     <img class="center-in-div" src="./afbeeldingen/ijs_anita.jpg" alt="Logo Ijs Anita">
                 </div>
                 <div class="col l4 m6 s12 logo">
-                    <img class="center-in-div" src="./afbeeldingen/bakkerij_van_elsen.png"
-                        alt="Logo Bakkerij Van Elsen">
+                    <img class="center-in-div" src="./afbeeldingen/bakkerij_van_elsen.png" alt="Logo Bakkerij Van Elsen">
                 </div>
                 <div class="col l4 m6 s12 logo">
                     <img class="center-in-div" src="./afbeeldingen/davide.jpg" alt="Logo Pizzeria Davide">
@@ -146,8 +161,7 @@
                 </div>
                 <div class="col l6 m6 s12 logo">
                     <figure>
-                        <img class="center-in-div" src="./afbeeldingen/european_school_mol.png"
-                            alt="Logo European School Mol">
+                        <img class="center-in-div" src="./afbeeldingen/european_school_mol.png" alt="Logo European School Mol">
                     </figure>
                 </div>
             </div>
@@ -163,8 +177,7 @@
                     <div class="row">
                         <div class="col l6 m6 s12 logo">
                             <figure>
-                                <img class="center-in-div" src="./afbeeldingen/sleutelmakerij_sabine.png"
-                                    alt="Logo Schoen en Sleutelmakerij Sabine">
+                                <img class="center-in-div" src="./afbeeldingen/sleutelmakerij_sabine.png" alt="Logo Schoen en Sleutelmakerij Sabine">
                             </figure>
                         </div>
                         <div class="col l6 m6 s12">
@@ -232,15 +245,13 @@
                             <h6>
                                 Ons emailadres:
                             </h6>
-                            <a class="grey-text text-lighten-3"
-                                href="mailto:actiemenseninnood@gmail.com">actiemenseninnood@gmail.com</a>
+                            <a class="grey-text text-lighten-3" href="mailto:actiemenseninnood@gmail.com">actiemenseninnood@gmail.com</a>
                         </li>
                         <li>
                             <h6>
                                 Onze Facebookpagina:
                             </h6>
-                            <a class="grey-text text-lighten-3"
-                                href="https://www.facebook.com/Actie-MIN-158650077586415/">MIN</a>
+                            <a class="grey-text text-lighten-3" href="https://www.facebook.com/Actie-MIN-158650077586415/">MIN</a>
                         </li>
                         <li>
                             <h6>
@@ -269,20 +280,38 @@
         </div>
         <div class="footer-copyright">
             <div class="container">
-                <p>Keuzeproject 1ITF @ <a href="https://www.thomasmore.be">Thomas More</a> door <a
-                        href="../webbureau/index.html">Upvision</a></p>
+                <p>Keuzeproject 1ITF @ <a href="https://www.thomasmore.be">Thomas More</a> door <a href="../webbureau/index.html">Upvision</a></p>
             </div>
         </div>
     </footer>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         var elem = document.querySelector('.sidenav');
         var instance = new M.Sidenav(elem);
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('.sidenav').side
         });
     </script>
-</body>
-
-</html>
+    <!--    Taal dropdown menu-->
+    <script>
+        $(document).ready(function() {
+            $(".dropdown-trigger1").dropdown();
+            $(".dropdown-trigger2").dropdown();
+            $(".dropdown-item-nl").click(function() {
+                $(".dropdown-trigger1-text").text("NL");
+                $(".dropdown-trigger2-text").text("NL");
+            });
+            $(".dropdown-item-fr").click(function() {
+                $(".dropdown-trigger1-text").text("FR");
+                $(".dropdown-trigger2-text").text("FR");
+            });
+            $(".dropdown-item-en").click(function() {
+                $(".dropdown-trigger1-text").text("EN");
+                $(".dropdown-trigger2-text").text("EN");
+            });
+        });
+    </script>
+</body></html>

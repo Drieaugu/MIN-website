@@ -175,6 +175,10 @@ main {
     color: #F6F6F6;
 }
 
+.dropdown-content li>a{
+    color: #20368f;
+}
+
 /*ID's*/
 #map {
     height: 400px;
