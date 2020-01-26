@@ -19,6 +19,22 @@
 
 <body>
     <header>
+       <!-- Dropdown Structure1 -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!" class="dropdown-item-nl">NL</a></li>
+            <li class="divider"></li>
+            <li><a href="#!" class="dropdown-item-fr">FR</a></li>
+            <li class="divider"></li>
+            <li><a href="#!" class="dropdown-item-en">EN</a></li>
+        </ul>
+        <!-- Dropdown Structure2 -->
+        <ul id="dropdown2" class="dropdown-content">
+            <li><a href="#!" class="dropdown-item-nl">NL</a></li>
+            <li class="divider"></li>
+            <li><a href="#!" class="dropdown-item-fr">FR</a></li>
+            <li class="divider"></li>
+            <li><a href="#!" class="dropdown-item-en">EN</a></li>
+        </ul>
         <div class="navbar-fixed">
             <nav>
                 <div class="nav-wrapper">
@@ -32,6 +48,8 @@
                         <li><a href="doneren.html"><i class="material-icons left">favorite</i>Doneren</a></li>
                         <li><a href="partners.html"><i class="material-icons left">accessibility</i>Partners</a></li>
                         <li><a href="historiek.html"><i class="material-icons left">history</i>Historiek</a></li>
+                        <!-- Dropdown Trigger -->
+                        <li><a class="dropdown-trigger1" href="#!" data-target="dropdown1"><span class="dropdown-trigger1-text">NL</span><i class="material-icons right">arrow_drop_down</i></a></li>
                     </ul>
                 </div>
             </nav>
@@ -45,6 +63,8 @@
             <li><a href="doneren.html"><i class="material-icons left">favorite</i>Doneren</a></li>
             <li><a href="partners.html"><i class="material-icons left">accessibility</i>Partners</a></li>
             <li><a href="historiek.html"><i class="material-icons left">history</i>Historiek</a></li>
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-trigger2" href="#!" data-target="dropdown2"><span class="dropdown-trigger2-text">NL</span><i class="material-icons right">arrow_drop_down</i></a></li>
         </ul>
     </header>
     <main>
@@ -79,7 +99,7 @@
                     </div>
                 </li>
             </ul>
-        </div>      
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col l8 s12">
@@ -208,7 +228,6 @@
             </div>
         </div>
     </footer>
-
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
@@ -230,15 +249,34 @@
         $(document).ready(function() {
             $('.slider').slider({
                 full_width: true,
-                height : 500,
+                height: 500,
             });
         });
     </script>
-
     <script type="text/javascript">
         $('.carousel.carousel-slider').carousel({
             full_width: true,
-            height : 500
+            height: 500
         });
     </script>
-</body></html>
+    <!--    Taal dropdown menu-->
+    <script>
+        $(document).ready(function() {
+            $(".dropdown-trigger1").dropdown();
+            $(".dropdown-trigger2").dropdown();
+            $(".dropdown-item-nl").click(function(){
+                $(".dropdown-trigger1-text").text("NL");
+                $(".dropdown-trigger2-text").text("NL");
+            });
+            $(".dropdown-item-fr").click(function(){
+                $(".dropdown-trigger1-text").text("FR");
+                $(".dropdown-trigger2-text").text("FR");
+            });
+            $(".dropdown-item-en").click(function(){
+                $(".dropdown-trigger1-text").text("EN");
+                $(".dropdown-trigger2-text").text("EN");
+            });
+        });
+    </script>
+</body>
+</html>
