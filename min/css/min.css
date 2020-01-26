@@ -205,3 +205,8 @@ main {
 .btn-in-text{
     margin-bottom: 30px;
 }
+
+.footer-logo{
+    background-color: white;
+    border-radius: 5%;
+}
