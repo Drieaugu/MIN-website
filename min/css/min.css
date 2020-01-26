@@ -9,8 +9,8 @@ body {
     background-color: #F6F6F6;
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 16px;
+    line-height: 24px;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
