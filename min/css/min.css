@@ -183,6 +183,15 @@ main {
     color: #20368f;
 }
 
+.btn-in-text{
+    margin-bottom: 30px;
+}
+
+.footer-logo{
+    background-color: white;
+    border-radius: 5%;
+}
+
 /*ID's*/
 #map {
     height: 400px;
@@ -223,15 +232,6 @@ main {
     background-color: #0c1539;
 }
 
-.btn-in-text{
-    margin-bottom: 30px;
-}
-
-.footer-logo{
-    background-color: white;
-    border-radius: 5%;
-}
-
 @media screen and (min-width: 992px) and (max-width: 1164px){
     .brand-logo{
         display: none !important;
@@ -243,5 +243,19 @@ main {
 
     .dropdown-trigger1 .left{
         display: none !important;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .aside {
+        max-width: 100%;
+        margin: 100px auto 0px auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .aside, .openingsuren{
+        text-align: center;
+        margin-top: 10px;
     }
 }
