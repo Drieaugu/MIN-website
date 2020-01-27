@@ -197,13 +197,26 @@ main {
     white-space: nowrap;
     word-wrap: normal;
     direction: ltr;
-    -moz-font-feature-settings: 'liga';
-    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
 }
 
 #imgfransvandeursen {
     border-radius: 4%;
     border: 2px solid black;
+}
+
+#animatie-startstop {
+    bottom: 30px;
+    right: 5px;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    background-color: #20368f;
+}
+
+#animatie-startstop:hover {
+    background-color: #0c1539;
 }
 
 .btn-in-text{
