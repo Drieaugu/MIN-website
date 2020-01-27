@@ -27,6 +27,10 @@ nav li:hover a {
     color: black;
 }
 
+nav ul a{
+    font-size: 1.1vw !important;
+}
+
 h1 {
     font-size: 2.5rem;
 }
@@ -226,4 +230,10 @@ main {
 .footer-logo{
     background-color: white;
     border-radius: 5%;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1164px){
+    .brand-logo{
+        display: none !important;
+    }
 }
