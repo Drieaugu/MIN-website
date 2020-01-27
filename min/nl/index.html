@@ -110,6 +110,7 @@
                     </div>
                 </li>
             </ul>
+            <p class="btn-floating" id="animatie-startstop">||</p>
         </div>
         <div class="container">
             <div class="row">
@@ -286,12 +287,16 @@
                 full_width: true,
                 height: 500,
             });
-        });
-    </script>
-    <script type="text/javascript">
-        $('.carousel.carousel-slider').carousel({
-            full_width: true,
-            height: 500
+            $("#animatie-startstop").click(function(){
+                if($("#animatie-startstop").text() == "||"){
+                    $("#animatie-startstop").text(">");
+                    $(".slider").slider("pause");
+                }
+                else{
+                    $("#animatie-startstop").text("||");
+                    $(".slider").slider("start");
+                }
+            });
         });
     </script>
     <!--    Taal dropdown menu-->
