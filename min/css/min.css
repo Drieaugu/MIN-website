@@ -28,7 +28,7 @@ nav li:hover a {
 }
 
 nav ul a{
-    font-size: 1vw !important;
+    font-size: 14px !important;
 }
 
 h1 {
@@ -234,6 +234,14 @@ main {
 
 @media screen and (min-width: 992px) and (max-width: 1164px){
     .brand-logo{
+        display: none !important;
+    }
+
+    .dropdown-trigger1 .material-icons{
+        margin-left: 0 !important;
+    }
+
+    .dropdown-trigger1 .left{
         display: none !important;
     }
 }
